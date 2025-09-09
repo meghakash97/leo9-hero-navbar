@@ -33,3 +33,52 @@
 .hero-content button:hover {
   transform: scale(1.05);
 }
+
+/* 🔹 Tablets (landscape & portrait) */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Mobile (large phones) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* 🔹 Small mobile (very small screens) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content button {
+    width: 100%; /* Full width button on tiny screens */
+    font-size: 14px;
+    padding: 10px;
+  }
+}
