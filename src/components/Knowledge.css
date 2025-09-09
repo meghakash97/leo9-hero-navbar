@@ -1,0 +1,56 @@
+.knowledge-section {
+  padding: 60px 20px;
+  background: #f9f9f9; 
+  text-align: center;
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;  
+  padding-top: 0px;  
+}
+
+.knowledge-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.knowledge-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.knowledge-section li {
+  margin: 12px 0;
+}
+
+/* style for links */
+.knowledge-section a {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0s ease-in-out;
+
+  /* start hidden */
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* show when visible */
+.knowledge-section a.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hover popup effect */
+.knowledge-section a:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #007bff;
+}
